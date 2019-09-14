@@ -270,6 +270,7 @@
         </activity-alias>
 
         <!-- Anonymous Statistics -->
+        <!--
         <receiver
             android:name=".lineagestats.ReportingServiceManager"
             android:enabled="true"
@@ -282,14 +283,15 @@
         </receiver>
 
         <service
+            android:name=".lineagestats.StatsUploadJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
             android:name=".lineagestats.ReportingService"
             android:enabled="true"
             android:exported="false"
             android:label="ReportingService" />
-
-        <service
-            android:name=".lineagestats.StatsUploadJobService"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
+        -->
 
         <activity
             android:name=".profiles.NFCProfile"
